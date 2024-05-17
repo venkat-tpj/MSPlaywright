@@ -15,7 +15,7 @@ public class LaunchBrowser {
 				.setHeadless(false) 				// setHeadless(true) will not show the browser
 				.setChannel("chrome") 				//To run using local chrome browser from laptop
 				);
-		Page page = browser.newPage()
+		Page page = browser.newPage();
 		page.navigate("http://leaftaps.com/opentaps/control/main");
 		
 		String title = page.title();
